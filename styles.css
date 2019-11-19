@@ -1,0 +1,43 @@
+body{
+  background-color: black;
+}
+
+h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Londrina Shadow';
+  font-weight: bold;
+  font-size: 80px;
+  color: lightblue;
+}
+
+.background-tab{
+  margin: 0px;
+  background-color: blue;
+  background-size: cover;
+}
+
+h2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Londrina Shadow';
+  font-weight: lighter;
+  font-size: 60px;
+  color: pink;
+}
+
+p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Londrina Shadow';
+  font-weight: lighter;
+  font-size: 20px;
+  color: orchid;
+}
+
+img{
+  width: 100%;
+}
