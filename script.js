@@ -4,24 +4,23 @@ let whatTheCardsHold = [
   {
     "name" : "Old Man",
     "image" : "oldman.jpg",
-    "qualities": ["color", "vintage", "symmetry"]
+    "qualities": ["Color", " Vintage", " Symmetry"]
   },
   {
     "name" : "Night Life",
     "image" : "saif.jpg",
-    "qualities": ["colors", "accents", "raw"]
+    "qualities": ["Colors", " Accents", " Raw"]
   },
   {
     "name" : "Stage",
     "image" : "Stage.jpg",
-    "qualities": ["lights", "symmetry", "still"]
+    "qualities": ["Lights", " Symmetry", " Still"]
   }
 ];
 
 
 function createDeck(incomingJSON){
   var cardDiv = document.createElement("DIV");
-
   //create div for these whatTheCardsHold
 
   //create h3 for names
@@ -35,7 +34,7 @@ function createDeck(incomingJSON){
   cardDiv.appendChild(image);
 
   //create g3 again for qualities
-  let qualities = document.createElement("H3");
+  let qualities = document.createElement("H4");
   qualities.innerHTML = incomingJSON["qualities"];
   cardDiv.appendChild(qualities);
 
@@ -47,8 +46,6 @@ function createDeck(incomingJSON){
 document.addEventListener("DOMContentLoaded", function(event){
 
   cards = document.getElementById('cards');
-  console.log("Loaded cards:")
-  console.log(cards);
 
   for(var i = 0; i < whatTheCardsHold.length; i++){
     createDeck(whatTheCardsHold[i]);

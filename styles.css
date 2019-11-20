@@ -1,5 +1,5 @@
 body{
-  background-color: black;
+  background-color: black ;
 }
 
 h1{
@@ -14,7 +14,7 @@ h1{
 
 .background-tab{
   margin: 0px;
-  background-color: blue;
+  background-color: black;
   background-size: cover;
 }
 
@@ -26,6 +26,26 @@ h2{
   font-weight: lighter;
   font-size: 60px;
   color: pink;
+}
+
+h3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Londrina Shadow';
+  font-weight: lighter;
+  font-size: 35px;
+  color: pink;
+}
+
+h4{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Londrina Shadow';
+  font-weight: bold;
+  font-size: 35px;
+  color: lightblue;
 }
 
 p{
@@ -40,4 +60,14 @@ p{
 
 img{
   width: 100%;
+}
+
+#cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 1vmin;
+  grid-row-gap: 1vmin;
+  background-color: rgba(37, 25, 4, 0.39);
+  padding: 2vmin;
+  font-size: 1.5rem;
 }
